@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For Your Birthday</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<main class="app-shell">
+		<header class="topbar">
+			<a class="brand" href="#welcome" aria-label="Return to the beginning"><span>★</span> YOUR DAY</a>
+			<nav class="page-nav" aria-label="Birthday pages">
+				<a href="#welcome" data-page-link="welcome">01</a><a href="#memories" data-page-link="memories">02</a><a href="#letter" data-page-link="letter">03</a><a href="#wishes" data-page-link="wishes">04</a><a href="#surprise" data-page-link="surprise">05</a>
+			</nav>
+			<button class="sound-button" id="soundToggle" type="button" aria-label="Toggle party sound">♪ <span>sound on</span></button>
+		</header>
+
+		<section class="page active" data-page="welcome">
+			<div class="welcome-copy"><p class="eyebrow">A little something for you · 2026</p><h1>happy<br><em>birthday</em><b>♥</b></h1><p class="intro">A tiny corner of the internet filled with big wishes, silly faces, and all the good things you deserve today.</p><a class="button primary" href="#memories">open your gift <span>↗</span></a></div>
+			<div class="reference-frame tilted-right"><img src="1125548131898101673.jpg" alt="A happy couple taking a selfie together"></div><span class="scribble heart-scribble">♥</span><span class="sticker star-sticker">✦</span>
+		</section>
+
+		<section class="page" data-page="memories"><div class="page-heading"><p class="eyebrow">page two · the good stuff</p><h2>little moments,<br><em>big smiles.</em></h2></div><div class="polaroid-grid"><article class="polaroid polaroid-a"><div class="photo"><img src="1125548131898101673.jpg" alt="A couple smiling together in a cafe"></div><p>favorite people,<br>favorite places</p></article><article class="polaroid polaroid-b"><div class="photo"><img src="1027242996262697514.jpg" alt="A playful couple selfie"></div><p>more laughs<br>than candles</p></article><article class="polaroid polaroid-c"><div class="photo"><img src="1075656692260287064.jpg" alt="A playful couple selfie"></div><p>good people,<br>great energy</p></article></div><p class="side-note">Keep the tiny joys.<br>They add up.</p><a class="button next-button" href="#letter">next page <span>→</span></a></section>
+
+		<section class="page letter-page" data-page="letter"><div class="letter-card"><p class="eyebrow">page three · a note for you</p><h2>To my<br><em>favorite</em> person,</h2><p class="letter-text">Today is a good day to remind you that you make ordinary moments feel like celebrations. I hope this next trip around the sun brings you soft mornings, unexpected adventures, and reasons to laugh until your cheeks hurt.</p><p class="signature">with all my love,<br><strong>me ♥</strong></p></div><div class="letter-art photo-art"><img src="829788300137182024.jpg" alt="A playful close-up photo of a couple together" class="letter-photo"><span class="collage-caption">us ♥</span></div><a class="button next-button" href="#wishes">make a wish <span>→</span></a></section>
+
+		<section class="page wishes-page" data-page="wishes"><div class="page-heading"><p class="eyebrow">page four · wish wall</p><h2>put it out<br>into the <em>world.</em></h2></div><form class="wish-form" id="wishForm"><label for="wishInput">one wish for this year</label><div><input id="wishInput" maxlength="70" placeholder="I hope for..." autocomplete="off"><button type="submit" aria-label="Add wish">+</button></div></form><div class="wish-wall" id="wishWall"><p class="wish-note note-yellow">more dancing</p><p class="wish-note note-pink">slow Sundays</p><p class="wish-note note-blue">a little magic</p></div><a class="button next-button" href="#surprise">one more thing <span>→</span></a></section>
+
+		<section class="page surprise-page" data-page="surprise"><div class="surprise-content"><p class="eyebrow">page five · the finale</p><div class="big-star">★</div><h2>you are<br><em>the gift.</em></h2><p>Now go celebrate like the wonderful, slightly chaotic icon you are.</p><button class="button primary" id="confettiButton" type="button">throw confetti <span>✦</span></button></div><div class="surprise-collage"><img src="1107041152196678051.jpg" alt="A playful couple selfie" class="collage-img"><span class="collage-caption">best day<br>ever!</span></div></section>
+		<footer><span>made with love and questionable amounts of glitter</span><span>05 / 05</span></footer>
+	</main><script src="index.js"></script>
+</body>
+</html>
