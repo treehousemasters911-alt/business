@@ -1,3 +1,41 @@
+.page-nav a{flex:0 0 auto}
+
+@media (max-width: 480px){
+	.app-shell{width:calc(100% - 20px)}
+	.topbar{height:72px;align-items:center}
+	.brand{font-size:9px;letter-spacing:.1em;white-space:nowrap}
+	.brand span{font-size:15px;margin-right:2px}
+	.page-nav{gap:1px}
+	.page-nav a{width:23px;height:26px;font-size:10px}
+	.sound-button{font-size:0;padding:6px 0}
+	.sound-button:first-letter{font-size:18px}
+	.sound-button span{display:none}
+	.page{min-height:calc(100svh - 72px);padding:34px 5% 82px;overflow:visible}
+	.eyebrow{font-size:9px;letter-spacing:.11em;margin-bottom:17px}
+	.welcome-copy{width:100%;padding-top:6px}
+	h1{font-size:clamp(70px,23vw,104px)}
+	.intro{max-width:290px;font-size:15px;line-height:1.5}
+	.reference-frame{width:100%;margin:34px auto 0}
+	.page-heading h2,.letter-card h2{font-size:clamp(50px,16vw,76px)}
+	.polaroid-grid{position:static;display:grid;gap:22px;margin:34px auto 24px;justify-items:center}
+	.polaroid{width:min(78vw,220px)}
+	.polaroid-a{transform:rotate(-4deg)}
+	.polaroid-b{transform:rotate(3deg)}
+	.polaroid-c{transform:rotate(-2deg)}
+	.side-note{position:static;margin:12px 0 70px;font-size:14px}
+	.letter-card{width:100%}
+	.letter-text{font-size:16px;line-height:1.55}
+	.photo-art{width:min(78vw,220px);height:auto;aspect-ratio: .78;margin:30px auto 50px}
+	.wish-form{width:100%}
+	.wish-form input{min-width:0;width:100%;font-size:16px}
+	.wish-wall{min-height:275px;margin:32px 0 72px;position:relative}
+	.wish-note.new{max-width:calc(100% - 24px);overflow-wrap:anywhere}
+	.next-button{position:absolute;bottom:24px;right:5%;font-size:10px}
+	.surprise-content h2{font-size:clamp(58px,19vw,84px)}
+	.surprise-content>p:not(.eyebrow){font-size:16px;line-height:1.5}
+	.surprise-collage{width:100%;margin:38px auto 20px}
+	footer{font-size:9px;letter-spacing:.08em}
+}
 .confetti-piece{pointer-events:none}@media(max-width:720px){body{overflow-x:hidden}.app-shell{width:calc(100% - 24px)}.topbar{gap:8px}.brand{font-size:10px}.page-nav a{width:25px}.page{padding:40px 5% 86px;min-height:calc(100svh - 118px)}.welcome-copy{padding-top:0}.reference-frame{width:88%;margin-top:30px}.page-heading h2,.letter-card h2{font-size:clamp(52px,15vw,76px)}.polaroid-grid{margin-top:38px}.next-button{bottom:24px;right:5%}.letter-text{font-size:18px}.photo-art{width:220px;height:280px;margin-top:20px}.wish-wall{margin-top:38px}.surprise-collage{width:86%;margin-top:38px}.surprise-content h2{font-size:clamp(64px,18vw,84px)}.button.primary{padding:13px 16px;gap:16px;font-size:10px}}
 .photo-art{background:white;padding:10px 10px 42px}.letter-photo{width:100%;height:100%;object-fit:cover;display:block}.photo-art .collage-caption{right:-28px;bottom:-20px}
 .photo { overflow: hidden; }
