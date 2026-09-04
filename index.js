@@ -15,6 +15,15 @@ function handleRoute() {
 window.addEventListener('hashchange', handleRoute);
 handleRoute();
 
+document.addEventListener('keydown', (event) => {
+	if (event.key !== 'Enter' || ['INPUT', 'TEXTAREA', 'BUTTON'].includes(document.activeElement.tagName)) return;
+	const currentPage = pages.findIndex((page) => page.classList.contains('active'));
+	if (currentPage < pages.length - 1) {
+		event.preventDefault();
+		window.location.hash = pages[currentPage + 1].dataset.page;
+	}
+});
+
 document.querySelector('#wishForm').addEventListener('submit', (event) => {
 	event.preventDefault();
 	const input = document.querySelector('#wishInput');
@@ -32,16 +41,17 @@ document.querySelector('#wishForm').addEventListener('submit', (event) => {
 
 document.querySelector('#confettiButton').addEventListener('click', () => {
 	const colors = ['#e63946', '#f5d547', '#6d8be8', '#f4a9bd'];
-	for (let index = 0; index < 34; index += 1) {
+	for (let index = 0; index < 90; index += 1) {
 		const piece = document.createElement('i');
-		piece.style.cssText = `position:fixed;z-index:10;left:${50 + (Math.random() - .5) * 60}%;top:45%;width:9px;height:16px;background:${colors[index % colors.length]};transform:rotate(${Math.random() * 180}deg);animation:fall ${1 + Math.random() * 1.8}s ease-out forwards;`;
+		const drift = Math.round((Math.random() - 0.5) * 260);
+		piece.style.cssText = `position:fixed;z-index:10;left:${Math.random() * 100}vw;top:${-10 + Math.random() * 35}vh;width:${6 + Math.random() * 7}px;height:${10 + Math.random() * 12}px;background:${colors[index % colors.length]};transform:rotate(${Math.random() * 180}deg);--drift:${drift}px;animation:fall ${1.5 + Math.random() * 2.5}s ease-out forwards;`;
 		document.body.append(piece);
-		setTimeout(() => piece.remove(), 3000);
+		setTimeout(() => piece.remove(), 4500);
 	}
 });
 
 const animationStyle = document.createElement('style');
-animationStyle.textContent = '@keyframes fall { to { transform: translateY(80vh) rotate(600deg); opacity: 0; } }';
+animationStyle.textContent = '@keyframes fall { to { transform: translate3d(var(--drift), 115vh, 0) rotate(720deg); opacity: 0; } }';
 document.head.append(animationStyle);
 
 document.querySelector('#soundToggle').addEventListener('click', (event) => {
