@@ -6,6 +6,7 @@ function showPage(pageName) {
 	pages.forEach((page) => page.classList.toggle('active', page === target));
 	pageLinks.forEach((link) => link.classList.toggle('active', link.dataset.pageLink === target.dataset.page));
 	document.querySelector('footer span:last-child').textContent = `${String(pages.indexOf(target) + 1).padStart(2, '0')} / 05`;
+	window.scrollTo(0, 0);
 }
 
 function handleRoute() {
@@ -29,13 +30,16 @@ document.querySelector('#wishForm').addEventListener('submit', (event) => {
 	const input = document.querySelector('#wishInput');
 	const wish = input.value.trim();
 	if (!wish) return;
+	const wall = document.querySelector('#wishWall');
 	const note = document.createElement('p');
 	note.className = 'wish-note note-yellow new';
 	note.textContent = wish;
-	note.style.left = `${20 + Math.random() * 190}px`;
-	note.style.top = `${35 + Math.random() * 170}px`;
+	const maxLeft = Math.max(10, wall.clientWidth - 140);
+	const maxTop = Math.max(10, wall.clientHeight - 80);
+	note.style.left = `${10 + Math.random() * maxLeft}px`;
+	note.style.top = `${20 + Math.random() * maxTop}px`;
 	note.style.transform = `rotate(${Math.round(Math.random() * 16 - 8)}deg)`;
-	document.querySelector('#wishWall').append(note);
+	wall.append(note);
 	input.value = '';
 });
 

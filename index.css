@@ -1,8 +1,1099 @@
-@media(max-width:480px){.app-shell{width:calc(100% - 20px)}.topbar{height:64px}.brand{font-size:9px}.brand span{font-size:15px;margin-right:2px}.page-nav a{width:23px;font-size:10px}.sound-button{font-size:0}.sound-button:first-letter{font-size:18px}.page{padding:34px 4% 78px;min-height:calc(100svh - 110px)}.eyebrow{font-size:9px;margin-bottom:16px;letter-spacing:.11em}.welcome-copy{padding-top:8px}.welcome-copy h1{font-size:clamp(68px,22vw,98px)}.intro{font-size:15px;line-height:1.45}.reference-frame{width:92%;margin-top:28px}.page-heading h2,.letter-card h2{font-size:clamp(47px,17vw,70px)}.polaroid-grid{display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:30px}.polaroid{width:min(230px,88%)}.photo{height:185px}.polaroid p{font-size:14px}.side-note{position:relative;left:auto;bottom:auto;margin:24px 0 0;font-size:17px}.letter-text{font-size:17px;line-height:1.5}.letter-art{width:min(230px,88%);height:260px}.wish-form{width:100%}.wish-form>div{display:flex}.wish-form input{min-width:0}.wish-wall{height:250px;margin-top:30px}.wish-note{font-size:18px}.note-yellow{left:4%}.note-pink{right:4%}.note-blue{left:24%}.next-button{right:4%;bottom:18px}.surprise-content h2{font-size:clamp(60px,20vw,78px)}.surprise-collage{width:92%;margin-top:34px}footer{font-size:8px;gap:10px}footer span:first-child{max-width:72%}}
-.confetti-piece{pointer-events:none}@media(max-width:720px){body{overflow-x:hidden}.app-shell{width:calc(100% - 24px)}.topbar{gap:8px}.brand{font-size:10px}.page-nav a{width:25px}.page{padding:40px 5% 86px;min-height:calc(100svh - 118px)}.welcome-copy{padding-top:0}.reference-frame{width:88%;margin-top:30px}.page-heading h2,.letter-card h2{font-size:clamp(52px,15vw,76px)}.polaroid-grid{margin-top:38px}.next-button{bottom:24px;right:5%}.letter-text{font-size:18px}.photo-art{width:220px;height:280px;margin-top:20px}.wish-wall{margin-top:38px}.surprise-collage{width:86%;margin-top:38px}.surprise-content h2{font-size:clamp(64px,18vw,84px)}.button.primary{padding:13px 16px;gap:16px;font-size:10px}}
-.photo-art{background:white;padding:10px 10px 42px}.letter-photo{width:100%;height:100%;object-fit:cover;display:block}.photo-art .collage-caption{right:-28px;bottom:-20px}
-.photo { overflow: hidden; }
-.photo img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.enter-hint{color:#89857e;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.enter-hint strong{color:var(--red)}.welcome-copy>.enter-hint{margin-top:30px}.enter-hint span{display:inline-grid;place-items:center;width:22px;height:22px;margin-left:7px;border:1px solid #c8c4bb;color:var(--ink);font-size:14px}
-.entry-screen{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:var(--paper);transition:opacity .5s ease,visibility .5s ease}.entry-screen.is-hidden{opacity:0;visibility:hidden}.entry-card{text-align:center;padding:40px 28px}.entry-card h1{font-size:clamp(78px,12vw,150px);margin-bottom:38px}.entry-star{display:block;color:var(--yellow);font-size:48px;margin-bottom:24px;animation:float-star 2.5s ease-in-out infinite}.entry-button{margin:auto}.gift-open .app-shell{animation:appear .7s ease both}@keyframes float-star{50%{transform:translateY(-9px) rotate(8deg)}}
-:root{--ink:#191919;--paper:#fbfaf7;--red:#e63946;--yellow:#f5d547;--blue:#6d8be8;--pink:#f4a9bd}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}body:before{content:'';position:fixed;inset:0;opacity:.25;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E")}.app-shell{width:min(1180px,calc(100% - 56px));min-height:100vh;margin:auto;position:relative}.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d9d7d1;position:relative;z-index:5}.brand{color:var(--ink);text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.14em}.brand span{color:var(--red);font-size:18px;vertical-align:-2px;margin-right:5px}.page-nav{display:flex;gap:6px}.page-nav a{width:38px;height:30px;display:grid;place-items:center;color:#96938d;text-decoration:none;font-size:11px;border-bottom:2px solid transparent}.page-nav a.active{color:var(--ink);border-color:var(--red)}.sound-button{color:var(--ink);border:0;background:none;cursor:pointer;font:700 11px 'DM Sans';text-transform:uppercase;letter-spacing:.08em}.sound-button span{margin-left:7px;color:#89857e}.page{min-height:calc(100vh - 134px);display:none;position:relative;padding:70px 5% 80px;overflow:hidden;animation:appear .5s ease both}.page.active{display:block}.eyebrow{margin:0 0 20px;color:#89857e;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.welcome-copy{width:48%;padding-top:65px;position:relative;z-index:2}h1,h2{font-family:Kalam,cursive;font-weight:700;line-height:.84;letter-spacing:0;margin:0}h1{font-size:clamp(75px,11vw,145px)}h1 em,h2 em{color:var(--red);font-style:normal}h1 b{color:var(--red);font-size:.33em;vertical-align:top;margin-left:15px}.intro{max-width:340px;line-height:1.6;color:#595650;margin:32px 0;font-size:14px}.button{display:inline-flex;align-items:center;gap:24px;padding:14px 19px;text-decoration:none;font:700 11px 'DM Sans';letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink);color:var(--ink);cursor:pointer;background:transparent}.button span{font-size:17px;line-height:10px}.button.primary{border-color:var(--red);background:var(--red);color:white}.button:hover{transform:translateY(-2px)}.reference-frame{position:absolute;width:min(41%,430px);right:7%;top:36px;background:white;padding:12px 12px 42px;box-shadow:0 16px 30px #2420181c}.reference-frame img{width:100%;display:block}.tilted-right{transform:rotate(4deg)}.scribble{font-family:Kalam}.heart-scribble{position:absolute;left:3%;bottom:18%;color:var(--red);font-size:76px;transform:rotate(-18deg)}.sticker{position:absolute;right:48%;bottom:8%;color:var(--yellow);font-size:60px}.page-heading h2,.letter-card h2{font-size:clamp(58px,8vw,100px)}.polaroid-grid{position:absolute;right:7%;top:90px;display:flex;gap:22px;align-items:center}.polaroid{width:190px;padding:9px 9px 17px;background:#fff;box-shadow:0 12px 20px #24201820;text-align:center}.polaroid p{font:18px/1 Kalam;margin:10px 0 0}.polaroid-a{transform:rotate(-7deg)}.polaroid-b{transform:rotate(4deg) translateY(48px)}.polaroid-c{transform:rotate(-3deg)}.photo{height:175px;display:grid;place-items:center;font-size:84px}.photo-puppy{background:var(--yellow)}.photo-cake{background:var(--pink)}.photo-party{background:var(--blue)}.side-note{position:absolute;bottom:22%;left:7%;font:25px/1.1 Kalam;transform:rotate(-8deg)}.next-button{position:absolute;bottom:8%;right:7%}.letter-page{background:#fffdf7}.letter-card{width:53%;padding:20px 5% 20px 0}.letter-text{max-width:500px;font:22px/1.45 Kalam;margin:36px 0}.signature{font:18px/1.4 Kalam}.signature strong{color:var(--red);font-size:27px}.letter-art{position:absolute;right:14%;top:22%;width:280px;height:330px;background:var(--yellow);transform:rotate(7deg);border:10px solid white;box-shadow:0 12px 20px #24201820}.party-hat{position:absolute;top:25px;left:85px;color:var(--red);font-size:120px;transform:rotate(-20deg)}.balloon{position:absolute;border-radius:50% 50% 48% 48%;width:70px;height:88px}.balloon:after{content:'';position:absolute;width:1px;height:80px;background:var(--ink);top:83px;left:50%}.balloon-one{background:var(--red);left:20px;top:45px;transform:rotate(-15deg)}.balloon-two{background:var(--blue);right:22px;top:78px;transform:rotate(12deg)}.cake-emoji{position:absolute;bottom:28px;left:88px;font-size:94px}.surprise-page.active{display:flex;align-items:center;justify-content:space-between}.surprise-content{width:48%}.surprise-content h2{font-size:clamp(70px,10vw,128px)}.surprise-content>p:not(.eyebrow){margin:30px 0;color:#5f5b54}.big-star{color:var(--yellow);font-size:48px}.surprise-collage{width:39%;position:relative;transform:rotate(5deg)}.collage-img{width:100%;border:12px solid white;box-shadow:0 16px 30px #2420181c}.collage-caption{position:absolute;right:-20px;bottom:-28px;background:var(--pink);padding:14px 21px;font:25px/1 Kalam;transform:rotate(-7deg)}.wish-form{width:40%;margin-top:45px}.wish-form label{font:20px Kalam;display:block;margin-bottom:12px}.wish-form div{display:flex;border-bottom:2px solid var(--ink)}.wish-form input{border:0;background:transparent;outline:0;flex:1;font:18px Kalam;padding:12px 0}.wish-form button{border:0;background:none;font-size:28px;cursor:pointer}.wish-wall{position:absolute;top:110px;right:13%;width:390px;height:320px;background:#f1ede2;border:1px solid #dfd9ca;transform:rotate(2deg)}.wish-note{position:absolute;width:150px;padding:25px 12px;text-align:center;font:22px Kalam;box-shadow:2px 4px 7px #0002}.note-yellow{background:var(--yellow);top:30px;left:35px;transform:rotate(-8deg)}.note-pink{background:var(--pink);top:115px;right:28px;transform:rotate(7deg)}.note-blue{background:#b5c9ff;bottom:22px;left:105px;transform:rotate(-4deg)}.wish-note.new{animation:pop .3s ease both}footer{height:46px;display:flex;justify-content:space-between;align-items:center;color:#99958c;font-size:10px;letter-spacing:.1em;text-transform:uppercase;border-top:1px solid #d9d7d1}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}@keyframes pop{from{opacity:0;transform:scale(.4) rotate(-15deg)}to{opacity:1}}@media(max-width:720px){.app-shell{width:calc(100% - 32px)}.topbar{height:72px}.page-nav{gap:0}.page-nav a{width:28px}.sound-button span{display:none}.page{min-height:calc(100vh - 118px);padding:50px 5% 75px}.welcome-copy{width:100%;padding-top:12px}.reference-frame{position:relative;width:79%;right:auto;top:auto;margin:38px auto 0}.heart-scribble{left:0;bottom:37%}.sticker{right:0;bottom:10%}.polaroid-grid{position:relative;top:auto;right:auto;margin:46px auto 0;gap:7px}.polaroid{width:31%;padding:5px 5px 11px}.photo{height:115px;font-size:48px}.polaroid p{font-size:13px}.side-note{bottom:23%;left:3%;font-size:19px}.letter-card{width:100%}.letter-text{font-size:19px;margin:28px 0}.letter-art{position:relative;right:auto;top:auto;width:230px;height:250px;margin:25px auto}.party-hat{left:67px;font-size:92px}.cake-emoji{left:70px;font-size:70px}.wish-form{width:90%}.wish-wall{position:relative;top:auto;right:auto;width:100%;height:280px;margin-top:45px}.surprise-page.active{display:block}.surprise-content{width:100%}.surprise-collage{width:80%;margin:48px auto 0}.surprise-content h2{font-size:75px}}
+:root {
+  --ink: #191919;
+  --paper: #fbfaf7;
+  --red: #e63946;
+  --yellow: #f5d547;
+  --blue: #6d8be8;
+  --pink: #f4a9bd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.25;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+}
+
+/* App Shell */
+.app-shell {
+  width: min(1180px, calc(100% - 56px));
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+/* Topbar */
+.topbar {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d7d1;
+  position: relative;
+  z-index: 5;
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.brand span {
+  color: var(--red);
+  font-size: 18px;
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+
+.page-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.page-nav a {
+  width: 38px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: #96938d;
+  text-decoration: none;
+  font-size: 11px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-nav a.active {
+  color: var(--ink);
+  border-color: var(--red);
+}
+
+.sound-button {
+  color: var(--ink);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font: 700 11px 'DM Sans';
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sound-button span {
+  margin-left: 7px;
+  color: #89857e;
+}
+
+/* Page Common */
+.page {
+  min-height: calc(100vh - 134px);
+  display: none;
+  position: relative;
+  padding: 70px 5% 80px;
+  overflow: hidden;
+  animation: appear 0.5s ease both;
+}
+
+.page.active {
+  display: block;
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  color: #89857e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: Kalam, cursive;
+  font-weight: 700;
+  line-height: 0.84;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(75px, 11vw, 145px);
+}
+
+h1 em,
+h2 em {
+  color: var(--red);
+  font-style: normal;
+}
+
+h1 b {
+  color: var(--red);
+  font-size: 0.33em;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+.intro {
+  max-width: 340px;
+  line-height: 1.6;
+  color: #595650;
+  margin: 32px 0;
+  font-size: 14px;
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 19px;
+  text-decoration: none;
+  font: 700 11px 'DM Sans';
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button span {
+  font-size: 17px;
+  line-height: 10px;
+}
+
+.button.primary {
+  border-color: var(--red);
+  background: var(--red);
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.next-button {
+  position: absolute;
+  bottom: 8%;
+  right: 7%;
+}
+
+/* Page 1: Welcome */
+.welcome-copy {
+  width: 48%;
+  padding-top: 65px;
+  position: relative;
+  z-index: 2;
+}
+
+.reference-frame {
+  position: absolute;
+  width: min(41%, 430px);
+  right: 7%;
+  top: 36px;
+  background: white;
+  padding: 12px 12px 42px;
+  box-shadow: 0 16px 30px #2420181c;
+}
+
+.reference-frame img {
+  width: 100%;
+  display: block;
+}
+
+.tilted-right {
+  transform: rotate(4deg);
+}
+
+.scribble {
+  font-family: Kalam;
+}
+
+.heart-scribble {
+  position: absolute;
+  left: 3%;
+  bottom: 18%;
+  color: var(--red);
+  font-size: 76px;
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+
+.sticker {
+  position: absolute;
+  right: 48%;
+  bottom: 8%;
+  color: var(--yellow);
+  font-size: 60px;
+  pointer-events: none;
+}
+
+/* Page 2: Memories */
+.page-heading h2,
+.letter-card h2 {
+  font-size: clamp(58px, 8vw, 100px);
+}
+
+.polaroid-grid {
+  position: absolute;
+  right: 7%;
+  top: 90px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.polaroid {
+  width: 190px;
+  padding: 9px 9px 17px;
+  background: #fff;
+  box-shadow: 0 12px 20px #24201820;
+  text-align: center;
+}
+
+.polaroid p {
+  font: 18px/1 Kalam;
+  margin: 10px 0 0;
+}
+
+.polaroid-a {
+  transform: rotate(-7deg);
+}
+
+.polaroid-b {
+  transform: rotate(4deg) translateY(48px);
+}
+
+.polaroid-c {
+  transform: rotate(-3deg);
+}
+
+.photo {
+  height: 175px;
+  display: grid;
+  place-items: center;
+  font-size: 84px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-puppy {
+  background: var(--yellow);
+}
+
+.photo-cake {
+  background: var(--pink);
+}
+
+.photo-party {
+  background: var(--blue);
+}
+
+.side-note {
+  position: absolute;
+  bottom: 22%;
+  left: 7%;
+  font: 25px/1.1 Kalam;
+  transform: rotate(-8deg);
+}
+
+/* Page 3: Letter */
+.letter-page {
+  background: #fffdf7;
+}
+
+.letter-card {
+  width: 53%;
+  padding: 20px 5% 20px 0;
+}
+
+.letter-text {
+  max-width: 500px;
+  font: 22px/1.45 Kalam;
+  margin: 36px 0;
+}
+
+.signature {
+  font: 18px/1.4 Kalam;
+}
+
+.signature strong {
+  color: var(--red);
+  font-size: 27px;
+}
+
+.letter-art {
+  position: absolute;
+  right: 14%;
+  top: 22%;
+  width: 280px;
+  height: 330px;
+  background: var(--yellow);
+  transform: rotate(7deg);
+  border: 10px solid white;
+  box-shadow: 0 12px 20px #24201820;
+}
+
+.photo-art {
+  background: white;
+  padding: 10px 10px 42px;
+}
+
+.letter-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-art .collage-caption {
+  position: absolute;
+  right: -28px;
+  bottom: -20px;
+}
+
+.party-hat {
+  position: absolute;
+  top: 25px;
+  left: 85px;
+  color: var(--red);
+  font-size: 120px;
+  transform: rotate(-20deg);
+}
+
+.balloon {
+  position: absolute;
+  border-radius: 50% 50% 48% 48%;
+  width: 70px;
+  height: 88px;
+}
+
+.balloon:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  background: var(--ink);
+  top: 83px;
+  left: 50%;
+}
+
+.balloon-one {
+  background: var(--red);
+  left: 20px;
+  top: 45px;
+  transform: rotate(-15deg);
+}
+
+.balloon-two {
+  background: var(--blue);
+  right: 22px;
+  top: 78px;
+  transform: rotate(12deg);
+}
+
+.cake-emoji {
+  position: absolute;
+  bottom: 28px;
+  left: 88px;
+  font-size: 94px;
+}
+
+/* Page 4: Wishes */
+.wish-form {
+  width: 40%;
+  margin-top: 45px;
+}
+
+.wish-form label {
+  font: 20px Kalam;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.wish-form div {
+  display: flex;
+  border-bottom: 2px solid var(--ink);
+}
+
+.wish-form input {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  flex: 1;
+  font: 18px Kalam;
+  padding: 12px 0;
+}
+
+.wish-form button {
+  border: 0;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.wish-wall {
+  position: absolute;
+  top: 110px;
+  right: 13%;
+  width: 390px;
+  height: 320px;
+  background: #f1ede2;
+  border: 1px solid #dfd9ca;
+  transform: rotate(2deg);
+}
+
+.wish-note {
+  position: absolute;
+  width: 150px;
+  padding: 25px 12px;
+  text-align: center;
+  font: 22px Kalam;
+  box-shadow: 2px 4px 7px #0002;
+}
+
+.note-yellow {
+  background: var(--yellow);
+  top: 30px;
+  left: 35px;
+  transform: rotate(-8deg);
+}
+
+.note-pink {
+  background: var(--pink);
+  top: 115px;
+  right: 28px;
+  transform: rotate(7deg);
+}
+
+.note-blue {
+  background: #b5c9ff;
+  bottom: 22px;
+  left: 105px;
+  transform: rotate(-4deg);
+}
+
+.wish-note.new {
+  animation: pop 0.3s ease both;
+}
+
+/* Page 5: Surprise */
+.surprise-page.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.surprise-content {
+  width: 48%;
+}
+
+.surprise-content h2 {
+  font-size: clamp(70px, 10vw, 128px);
+}
+
+.surprise-content > p:not(.eyebrow) {
+  margin: 30px 0;
+  color: #5f5b54;
+}
+
+.big-star {
+  color: var(--yellow);
+  font-size: 48px;
+}
+
+.surprise-collage {
+  width: 39%;
+  position: relative;
+  transform: rotate(5deg);
+}
+
+.collage-img {
+  width: 100%;
+  border: 12px solid white;
+  box-shadow: 0 16px 30px #2420181c;
+}
+
+.collage-caption {
+  position: absolute;
+  right: -20px;
+  bottom: -28px;
+  background: var(--pink);
+  padding: 14px 21px;
+  font: 25px/1 Kalam;
+  transform: rotate(-7deg);
+}
+
+/* Footer */
+footer {
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #99958c;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-top: 1px solid #d9d7d1;
+}
+
+/* Animations */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.4) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float-star {
+  50% {
+    transform: translateY(-9px) rotate(8deg);
+  }
+}
+
+.confetti-piece {
+  pointer-events: none;
+}
+
+/* Entry Hint & Screen */
+.enter-hint {
+  color: #89857e;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.enter-hint strong {
+  color: var(--red);
+}
+
+.welcome-copy > .enter-hint {
+  margin-top: 30px;
+}
+
+.enter-hint span {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 7px;
+  border: 1px solid #c8c4bb;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.entry-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.entry-screen.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.entry-card {
+  text-align: center;
+  padding: 40px 28px;
+}
+
+.entry-card h1 {
+  font-size: clamp(78px, 12vw, 150px);
+  margin-bottom: 38px;
+}
+
+.entry-star {
+  display: block;
+  color: var(--yellow);
+  font-size: 48px;
+  margin-bottom: 24px;
+  animation: float-star 2.5s ease-in-out infinite;
+}
+
+.entry-button {
+  margin: auto;
+}
+
+.gift-open .app-shell {
+  animation: appear 0.7s ease both;
+}
+
+/* ============================================================
+   RESPONSIVE STYLES
+   ============================================================ */
+
+/* Medium Screens / Small Desktops & Tablets Landscape (max-width: 960px) */
+@media (max-width: 960px) {
+  .app-shell {
+    width: calc(100% - 40px);
+  }
+
+  .polaroid-grid {
+    right: 3%;
+    gap: 12px;
+  }
+
+  .polaroid {
+    width: 160px;
+  }
+
+  .photo {
+    height: 145px;
+  }
+
+  .letter-art {
+    right: 5%;
+    width: 240px;
+    height: 290px;
+  }
+
+  .wish-wall {
+    right: 4%;
+    width: 340px;
+    height: 300px;
+  }
+}
+
+/* Mobile & Small Tablet Portrait (max-width: 768px) */
+@media (max-width: 768px) {
+  .app-shell {
+    width: calc(100% - 28px);
+    min-height: 100svh;
+  }
+
+  .topbar {
+    height: 66px;
+    gap: 8px;
+  }
+
+  .brand {
+    font-size: 11px;
+  }
+
+  .brand span {
+    font-size: 16px;
+  }
+
+  .page-nav {
+    gap: 2px;
+  }
+
+  .page-nav a {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .sound-button span {
+    display: none;
+  }
+
+  .sound-button {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  /* Page Container: Expand naturally so content flows properly */
+  .page {
+    min-height: calc(100svh - 120px);
+    height: auto;
+    padding: 28px 4% 40px;
+    overflow: visible;
+  }
+
+  .page.active {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Typography */
+  .eyebrow {
+    font-size: 10px;
+    margin-bottom: 14px;
+    letter-spacing: 0.12em;
+  }
+
+  h1 {
+    font-size: clamp(56px, 17vw, 90px);
+  }
+
+  .page-heading h2,
+  .letter-card h2 {
+    font-size: clamp(44px, 14vw, 72px);
+  }
+
+  /* CRUCIAL FIX: Navigation Buttons in natural flow below content */
+  .next-button {
+    position: static;
+    display: inline-flex;
+    align-self: flex-end;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    z-index: 3;
+  }
+
+  .button.primary {
+    padding: 13px 18px;
+    gap: 16px;
+    font-size: 11px;
+  }
+
+  /* Page 1: Welcome */
+  .welcome-copy {
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  .intro {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px 0 24px;
+  }
+
+  .reference-frame {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: min(290px, 88%);
+    margin: 32px auto 16px;
+    transform: rotate(3deg);
+  }
+
+  .heart-scribble {
+    left: 2%;
+    bottom: 24%;
+    font-size: 54px;
+  }
+
+  .sticker {
+    right: 4%;
+    bottom: 6%;
+    font-size: 46px;
+  }
+
+  /* Page 2: Memories */
+  .page-heading {
+    width: 100%;
+  }
+
+  .polaroid-grid {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 24px auto 0;
+    width: 100%;
+  }
+
+  .polaroid {
+    width: min(240px, 86%);
+    padding: 10px 10px 18px;
+  }
+
+  .photo {
+    height: 195px;
+  }
+
+  .polaroid p {
+    font-size: 16px;
+  }
+
+  .polaroid-a {
+    transform: rotate(-3deg);
+  }
+
+  .polaroid-b {
+    transform: rotate(2.5deg);
+  }
+
+  .polaroid-c {
+    transform: rotate(-2deg);
+  }
+
+  .side-note {
+    position: static;
+    left: auto;
+    bottom: auto;
+    margin: 28px auto 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    transform: rotate(-3deg);
+    color: var(--ink);
+  }
+
+  /* Page 3: Letter */
+  .letter-card {
+    width: 100%;
+    padding: 0;
+  }
+
+  .letter-text {
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 22px 0;
+    max-width: 100%;
+  }
+
+  .signature {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .letter-art {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: min(240px, 86%);
+    height: auto;
+    margin: 20px auto 36px;
+    transform: rotate(3deg);
+  }
+
+  .photo-art {
+    background: white;
+    padding: 10px 10px 42px;
+  }
+
+  .letter-photo {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .photo-art .collage-caption {
+    position: absolute;
+    right: -12px;
+    bottom: -18px;
+    font-size: 20px;
+    padding: 10px 16px;
+    z-index: 2;
+  }
+
+  /* Page 4: Wishes */
+  .wish-form {
+    width: 100%;
+    max-width: 380px;
+    margin: 24px auto 0;
+  }
+
+  .wish-form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .wish-form input {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .wish-wall {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: 360px;
+    height: 290px;
+    margin: 32px auto 0;
+    transform: rotate(1deg);
+  }
+
+  .wish-note {
+    width: 130px;
+    padding: 20px 10px;
+    font-size: 17px;
+  }
+
+  .note-yellow {
+    top: 20px;
+    left: 18px;
+    transform: rotate(-6deg);
+  }
+
+  .note-pink {
+    top: 90px;
+    right: 18px;
+    transform: rotate(5deg);
+  }
+
+  .note-blue {
+    bottom: 20px;
+    left: 45px;
+    transform: rotate(-3deg);
+  }
+
+  /* Page 5: Surprise */
+  .surprise-page.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .surprise-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .surprise-content h2 {
+    font-size: clamp(52px, 16vw, 82px);
+  }
+
+  .surprise-content > p:not(.eyebrow) {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  #confettiButton {
+    margin: 0 auto;
+  }
+
+  .surprise-collage {
+    position: relative;
+    width: min(260px, 86%);
+    margin: 38px auto 28px;
+    transform: rotate(3deg);
+  }
+
+  .collage-img {
+    border: 10px solid white;
+  }
+
+  .collage-caption {
+    right: -12px;
+    bottom: -18px;
+    font-size: 20px;
+    padding: 10px 16px;
+  }
+
+  /* Footer */
+  footer {
+    height: 48px;
+    font-size: 9px;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  footer span:first-child {
+    max-width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  footer span:last-child {
+    white-space: nowrap;
+  }
+}
+
+/* Very Small Screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .app-shell {
+    width: calc(100% - 20px);
+  }
+
+  .brand {
+    font-size: 10px;
+  }
+
+  .brand span {
+    font-size: 14px;
+  }
+
+  .page-nav a {
+    width: 24px;
+    height: 26px;
+    font-size: 10px;
+  }
+
+  .page {
+    padding: 24px 2% 32px;
+  }
+
+  .polaroid {
+    width: 90%;
+  }
+
+  .photo {
+    height: 180px;
+  }
+
+  .wish-wall {
+    height: 270px;
+  }
+
+  .wish-note {
+    width: 115px;
+    padding: 15px 8px;
+    font-size: 15px;
+  }
+
+  .note-yellow {
+    left: 10px;
+    top: 16px;
+  }
+
+  .note-pink {
+    right: 10px;
+    top: 80px;
+  }
+
+  .note-blue {
+    left: 28px;
+    bottom: 16px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+}
